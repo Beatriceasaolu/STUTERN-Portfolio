@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  height: 100%;
+}
+nav {
+  height: 50px;
+  width: 100%;
+  background: #583f46;
+}
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 0 50px;
+  line-height: 50px;
+  animation: left 4s;
+  animation-name: left;
+}
+@keyframes left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    /* left: 50%; */
+    transform: translateX(0%);
+    filter: blur(0px);
+  }
+}
+ul {
+  float: right;
+  margin-right: 40px;
+}
+li {
+  display: inline-block;
+  margin: 0 8px;
+  color: black;
+  line-height: 50px;
+}
+a {
+  font-size: 18px;
+  padding: 5px 10px;
+  color: black;
+  border-radius: 3px;
+}
+.active,
+a:hover {
+  border: 1px solid black;
+  color: white;
+  background: black;
+  transition: 0.4s;
+}
+.img,
+img {
+  width: 70%;
+  height: 10%;
+}
+main {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  margin-bottom: 5%;
+}
+.intro {
+  margin-top: 5%;
+}
+/* .img {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 192, 239),
+    rgb(0, 255, 157)
+  );
+} */
+.middle,
+.last {
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.img,
+.intro {
+  width: 50%;
+}
+.intro {
+  width: 100%;
+}
+.journey,
+.skills {
+  width: 50%;
+}
+.journey p,
+.intro p {
+  margin-top: 10px;
+  padding-right: 10%;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 5;
+  padding-left: 2%;
+}
+.skills p {
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
